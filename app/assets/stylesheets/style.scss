@@ -24,6 +24,8 @@ a {
   text-decoration: none;
 }
 
+
+
 /* -------------------------------- 
 Modules - reusable parts of our design
 -------------------------------- */
@@ -33,6 +35,10 @@ Modules - reusable parts of our design
 }
 
 .cd-content2 {
+  @include outer-container(100%);
+}
+
+.cd-content3 {
   @include outer-container(100%);
 }
 
@@ -158,13 +164,13 @@ Main components
   #cd-intro-background {
     height: 100%;
     width: 100%;
-    background: url('montana.jpg') no-repeat center center;
+    background: url('mammoth.jpg') no-repeat center center;
     background-size: cover;
     box-shadow: 0 0 30px rgba(#000, .5); 
   }
 
   #cd-intro-tagline {
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     position: absolute;
     width: 90%;
     max-width: $L;
@@ -264,7 +270,7 @@ Main components
   padding: 2em 0;
   line-height: 1.6;
   color: $color-3;
-  background-color: $color-2;
+  background-color: $color-1;
   z-index: index($elements, main-content);
 
 
@@ -295,4 +301,44 @@ Main components
     }
   }
 } 
+
+.cd-content3  {
+  position: relative;
+  padding: 2em 0;
+  line-height: 1.6;
+  color: $color-3;
+  background: url('NM.jpg') no-repeat center;
+  background-size: 100%; 
+
+  z-index: index($elements, main-content);
+
+
+
+  h2 {
+    @include font-size(20px);
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+
+  @include MQ(M) {
+    line-height: 1.8;
+
+    h2 {
+      @include font-size(30px);
+    }
+  }
+
+  @include MQ(L) {
+    padding: 4em 0;
+    
+
+    p {
+      @include font-size(20px);
+    }
+  }
+}
+
 
