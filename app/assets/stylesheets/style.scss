@@ -38,9 +38,11 @@ text-align: center;
 }
 
 .site {
+ font-size: 16px;
  text-align: center;
  color: #e96340;
- font-size: 16px;
+ 
+ line-height: .5;
   
 }
 
@@ -54,7 +56,7 @@ text-align: center;
 
 a {
   color: #ffffff;
-  font-size: 24px;
+
  
 
 }
@@ -371,7 +373,7 @@ Sections
     
 
     p {
-      @include font-size(20px);
+
     }
   }
 } 
@@ -427,13 +429,13 @@ Projects
 
 
 .project {
-
+  text-align: center;
   width: 50%;
   padding-right: 5%;
   padding-left: 5%;
 
   float: left;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 
