@@ -296,6 +296,7 @@ Sections
   line-height: 1.6;
   color: $color-3;
   background: url('17.jpg');
+  background-size: cover;
   z-index: index($elements, main-content);
 
   &::before {
