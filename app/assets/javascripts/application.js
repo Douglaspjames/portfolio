@@ -45,11 +45,11 @@ $(document).ready(function($){
 
       if($(window).scrollTop() < introSectionHeight) {
         introSection.css({
-          '-moz-transform': 'scale(' + scaleValue + ') translateZ(0)',
-          '-webkit-transform': 'scale(' + scaleValue + ') translateZ(0)',
-        '-ms-transform': 'scale(' + scaleValue + ') translateZ(0)',
-        '-o-transform': 'scale(' + scaleValue + ') translateZ(0)',
-        'transform': 'scale(' + scaleValue + ') translateZ(0)',
+        //   '-moz-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        //   '-webkit-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        // '-ms-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        // '-o-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        // 'transform': 'scale(' + scaleValue + ') translateZ(0)',
         'opacity': 1 - scrollPercentage*opacitySpeed
         });
       }
